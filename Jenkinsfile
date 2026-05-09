@@ -16,7 +16,7 @@ pipeline {
 
         stage('Run Unit Tests') {
             steps {
-                bat 'python -m pytest test_calculator.py -v'
+                bat 'python -m pytest ./test_calculator.py -v'
             }
         }
     }
