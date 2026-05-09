@@ -10,13 +10,13 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'pip install pytest'
+                bat 'pip install pytest'
             }
         }
 
         stage('Run Unit Tests') {
             steps {
-                sh 'python -m pytest test_calculator.py -v'
+                bat 'python -m pytest test_calculator.py -v'
             }
         }
     }
